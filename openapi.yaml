@@ -1,0 +1,76 @@
+openapi: 3.0.4
+info:
+  title: ISBN Validator
+  description: ISBN Validator is a comprehensive tool for validating and parsing ISBN-10 and ISBN-13 book identification numbers. It validates checksums and provides detailed information about each ISBN component.
+  termsOfService: https://apiverve.com/terms/
+  contact:
+    name: APIVerve Support
+    email: hello@apiverve.com
+    url: https://apiverve.com/contact
+  version: 1.0.9
+externalDocs:
+  description: Learn more about APIVerve
+  url: https://docs.apiverve.com?utm_source=openapi
+servers:
+- url: https://api.apiverve.com/
+paths:
+  /v1/isbnvalidator:
+    get:
+      summary: Validate ISBN
+      description: ISBN Validator is a comprehensive tool for validating and parsing ISBN-10 and ISBN-13 book identification numbers. It validates checksums and provides detailed information about each ISBN component.
+      operationId: isbnvalidator
+      parameters:
+      - name: isbn
+        in: query
+        schema:
+          type: string
+        required: true
+        description: The ISBN number to validate (ISBN-10 or ISBN-13, with or without separators)
+        example: 978-0-306-40615-7
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: status
+                  error:
+                    type: string
+                    description: error
+                  data:
+                    type: string
+                    description: data
+              example:
+                status: ok
+                error: 
+                data:
+                  valid: true
+                  isbn: 978-0-306-40615-7
+                  type: ISBN-13
+                  normalized: '9780306406157'
+                  formatted: 978-0-306-40615-7
+                  checksum_valid: true
+                  prefix: '978'
+                  group: '0'
+                  publisher: '306'
+                  title: '40615'
+                  check_digit: '7'
+                  error: 
+        '401':
+          description: Your request was not authorized, or your API Key was invalid
+        '404':
+          description: Requested resource was not found
+        '500':
+          description: A server error has occured, try again later
+components:
+  securitySchemes:
+    api_key:
+      type: apiKey
+      name: x-api-key
+      in: header
+security:
+- api_key: []
