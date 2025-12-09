@@ -1,0 +1,35 @@
+{
+  "name": "@apiverve/isbnvalidator",
+  "version": "1.1.12",
+  "description": "ISBN Validator is a comprehensive tool for validating and parsing ISBN-10 and ISBN-13 book identification numbers. It validates checksums and provides detailed information about each ISBN component.",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "mocha",
+    "example": "node examples/basic.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apiverve/isbnvalidator-api.git",
+    "directory": "npm"
+  },
+  "keywords": [
+    "isbn", "isbn validator", "isbn-10", "isbn-13", "book isbn"
+  ],
+  "author": "APIVerve <hello@apiverve.com> (http://apiverve.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/apiverve/isbnvalidator-api/issues"
+  },
+  "homepage": "https://apiverve.com/marketplace/isbnvalidator?utm_source=npm",
+  "devDependencies": {
+    "mocha": "^11.0.1",
+    "chai": "^5.1.2",
+    "dotenv": "^16.4.7"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2",
+    "promise": "^8.3.0",
+    "axios": "1.13.2"
+  }
+}
