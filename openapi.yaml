@@ -1,32 +1,37 @@
 openapi: 3.0.4
 info:
   title: ISBN Validator
-  description: ISBN Validator is a comprehensive tool for validating and parsing ISBN-10 and ISBN-13 book identification numbers. It validates checksums and provides detailed information about each ISBN component.
+  description: >-
+    ISBN Validator is a comprehensive tool for validating and parsing ISBN-10
+    and ISBN-13 book identification numbers. It validates checksums and provides
+    detailed information about each ISBN component.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
     email: hello@apiverve.com
     url: https://apiverve.com/contact
-  version: 1.0.9
+  version: 1.0.0
 externalDocs:
   description: Learn more about APIVerve
   url: https://docs.apiverve.com?utm_source=openapi
 servers:
-- url: https://api.apiverve.com/
+  - url: https://api.apiverve.com/
 paths:
   /v1/isbnvalidator:
     get:
       summary: Validate ISBN
-      description: ISBN Validator is a comprehensive tool for validating and parsing ISBN-10 and ISBN-13 book identification numbers. It validates checksums and provides detailed information about each ISBN component.
+      description: Validate and parse ISBN-10 or ISBN-13 numbers
       operationId: isbnvalidator
       parameters:
-      - name: isbn
-        in: query
-        schema:
-          type: string
-        required: true
-        description: The ISBN number to validate (ISBN-10 or ISBN-13, with or without separators)
-        example: 978-0-306-40615-7
+        - name: isbn
+          in: query
+          schema:
+            type: string
+          required: true
+          description: >-
+            The ISBN number to validate (ISBN-10 or ISBN-13, with or without
+            separators)
+          example: 978-0-306-40615-7
       responses:
         '200':
           description: Successful Response
@@ -42,11 +47,11 @@ paths:
                     type: string
                     description: error
                   data:
-                    type: string
+                    type: object
                     description: data
               example:
                 status: ok
-                error: 
+                error: null
                 data:
                   valid: true
                   isbn: 978-0-306-40615-7
@@ -59,13 +64,13 @@ paths:
                   publisher: '306'
                   title: '40615'
                   check_digit: '7'
-                  error: 
+                  error: null
         '401':
           description: Your request was not authorized, or your API Key was invalid
         '404':
           description: Requested resource was not found
         '500':
-          description: A server error has occured, try again later
+          description: A server error has occurred, try again later
 components:
   securitySchemes:
     api_key:
@@ -73,4 +78,4 @@ components:
       name: x-api-key
       in: header
 security:
-- api_key: []
+  - api_key: []
