@@ -48,23 +48,18 @@ namespace APIVerve.API.ISBNValidator
         public bool ChecksumValid { get; set; }
 
         [JsonProperty("prefix")]
-        [JsonConverter(typeof(ParseStringConverter))]
         public long Prefix { get; set; }
 
         [JsonProperty("group")]
-        [JsonConverter(typeof(ParseStringConverter))]
         public long Group { get; set; }
 
         [JsonProperty("publisher")]
-        [JsonConverter(typeof(ParseStringConverter))]
         public long Publisher { get; set; }
 
         [JsonProperty("title")]
-        [JsonConverter(typeof(ParseStringConverter))]
         public long Title { get; set; }
 
         [JsonProperty("check_digit")]
-        [JsonConverter(typeof(ParseStringConverter))]
         public long CheckDigit { get; set; }
 
         [JsonProperty("error")]
