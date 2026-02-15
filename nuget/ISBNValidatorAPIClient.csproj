@@ -3,8 +3,8 @@
   <PropertyGroup>
     <TargetFrameworks>net20;net35;net40;net45;netstandard2.0;netstandard2.1;net6.0</TargetFrameworks>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Title>APIVerve.API.ISBNValidator</Title>
-    <Version>1.1.12</Version>
+    <Title>ISBNValidator</Title>
+    <Version>1.1.13</Version>
     <Authors>APIVerve</Authors>
     <Company>APIVerve</Company>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
@@ -12,13 +12,13 @@
 
     <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
     <PackageReadmeFile>Readme.md</PackageReadmeFile>
-    <PackageProjectUrl>https://apiverve.com/marketplace/isbnvalidator</PackageProjectUrl>
+    <PackageProjectUrl>https://apiverve.com/marketplace/isbnvalidator?utm_source=nuget&amp;utm_medium=homepage</PackageProjectUrl>
     <SignAssembly>False</SignAssembly>
     <Description>ISBN Validator is a comprehensive tool for validating and parsing ISBN-10 and ISBN-13 book identification numbers. It validates checksums and provides detailed information about each ISBN component.</Description>
     <RepositoryUrl>https://github.com/apiverve/isbnvalidator-api</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <PackageTags>isbn;isbn validator;isbn-10;isbn-13;book isbn;api;rest;http;client;apiverve;wrapper;sdk;api;rest;http;client;apiverve;wrapper;sdk</PackageTags>
-    <Copyright>©2025 APIVerve. All Rights Reserved</Copyright>
+    <PackageTags>api;rest;http;client;apiverve;wrapper;sdk;api;rest;http;client;apiverve;wrapper;sdk</PackageTags>
+    <Copyright>©2026 APIVerve. All Rights Reserved</Copyright>
     <ApplicationIcon>favicon.ico</ApplicationIcon>
     <PackageIcon>favicon@128.png</PackageIcon>
     <BaseOutputPath>.\bin</BaseOutputPath>
