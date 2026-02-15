@@ -1,1 +1,3 @@
-from .apiClient import IsbnvalidatorAPIClient
+from .apiClient import IsbnvalidatorAPIClient, IsbnvalidatorAPIClientError
+
+__all__ = ['IsbnvalidatorAPIClient', 'IsbnvalidatorAPIClientError']
