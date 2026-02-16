@@ -227,8 +227,9 @@ from apiverve_isbnvalidator.apiClient import IsbnvalidatorAPIClient
 
 api = IsbnvalidatorAPIClient("[YOUR_API_KEY]")
 
+query = { "isbn": "978-0-306-40615-7" }
+
 try:
-    query = { "isbn": "978-0-306-40615-7" }
     result = api.execute(query)
     print(result)
 finally:
