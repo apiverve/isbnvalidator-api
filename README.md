@@ -191,11 +191,39 @@ x-api-key: YOUR_API_KEY_HERE
 Get your API key: [https://apiverve.com](https://apiverve.com)
 
 ### Response Format
-All responses are JSON with this structure:
+
+Every APIVerve endpoint returns the same envelope — check `status`, then read `data`:
+
 ```json
 {
   "status": "ok",
+  "error": null,
   "data": { ... }
+}
+```
+
+### Example Response
+
+A real response from the ISBN Validator API:
+
+```json
+{
+  "status": "ok",
+  "error": null,
+  "data": {
+    "valid": true,
+    "isbn": "978-0-306-40615-7",
+    "type": "ISBN-13",
+    "normalized": "9780306406157",
+    "formatted": "978-0-306-40615-7",
+    "checksum_valid": true,
+    "prefix": "978",
+    "group": "0",
+    "publisher": "306",
+    "title": "40615",
+    "check_digit": "7",
+    "error": null
+  }
 }
 ```
 
