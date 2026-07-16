@@ -25,12 +25,15 @@ namespace APIVerve.API.ISBNValidator
 
         [JsonProperty("data")]
         public Data Data { get; set; }
+
+        [JsonProperty("premium")]
+        public Premium Premium { get; set; }
     }
 
     public partial class Data
     {
         [JsonProperty("valid")]
-        public bool Valid { get; set; }
+        public bool? Valid { get; set; }
 
         [JsonProperty("isbn")]
         public string Isbn { get; set; }
@@ -45,24 +48,36 @@ namespace APIVerve.API.ISBNValidator
         public string Formatted { get; set; }
 
         [JsonProperty("checksum_valid")]
-        public bool ChecksumValid { get; set; }
+        public bool? ChecksumValid { get; set; }
 
         [JsonProperty("prefix")]
-        public long Prefix { get; set; }
+        public long? Prefix { get; set; }
 
         [JsonProperty("group")]
-        public long Group { get; set; }
+        public long? Group { get; set; }
 
         [JsonProperty("publisher")]
-        public long Publisher { get; set; }
+        public long? Publisher { get; set; }
 
         [JsonProperty("title")]
-        public long Title { get; set; }
+        public long? Title { get; set; }
 
         [JsonProperty("check_digit")]
-        public long CheckDigit { get; set; }
+        public long? CheckDigit { get; set; }
 
         [JsonProperty("error")]
         public object Error { get; set; }
+    }
+
+    public partial class Premium
+    {
+        [JsonProperty("message")]
+        public string Message { get; set; }
+
+        [JsonProperty("upgrade_url")]
+        public Uri UpgradeUrl { get; set; }
+
+        [JsonProperty("locked_fields")]
+        public string[] LockedFields { get; set; }
     }
 }
