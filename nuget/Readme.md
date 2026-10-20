@@ -1,13 +1,12 @@
-ISBNValidator API
+ISBN Validator API
 ============
 
-ISBN Validator is a comprehensive tool for validating and parsing ISBN-10 and ISBN-13 book identification numbers. It validates checksums and provides detailed information about each ISBN component.
+ISBN Validator checks ISBN-10 and ISBN-13 numbers for valid checksums and parses their registration group, publisher, and title parts. Pass any raw book identifier with or without hyphens to inspect normalized digits, format type, and specific rejection reasons.
 
-![Build Status](https://img.shields.io/badge/build-passing-green)
-![Code Climate](https://img.shields.io/badge/maintainability-B-purple)
-![Prod Ready](https://img.shields.io/badge/production-ready-blue)
 
-This is a .NET Wrapper for the [ISBNValidator API](https://apiverve.com/marketplace/isbnvalidator?utm_source=nuget&utm_medium=readme)
+[![NuGet version](https://img.shields.io/nuget/v/APIVerve.API.ISBNValidator.svg)](https://www.nuget.org/packages/APIVerve.API.ISBNValidator)
+
+This is a .NET wrapper for the [ISBN Validator API](https://apiverve.com/marketplace/isbnvalidator?utm_source=nuget&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -40,8 +39,8 @@ From within Visual Studio:
 
 ## Configuration
 
-Before using the isbnvalidator API client, you have to setup your account and obtain your API Key.
-You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=nuget&utm_medium=readme)
+Before using the ISBN Validator API client, you have to setup your account and obtain your API Key.
+You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=nuget&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -61,8 +60,8 @@ class Program
         var apiClient = new ISBNValidatorAPIClient("[YOUR_API_KEY]");
 
         var queryOptions = new ISBNValidatorQueryOptions {
-    Isbn = "978-0-306-40615-7"
-};
+            Isbn = "978-0-306-40615-7"
+        };
 
         // Make the API call
         try
@@ -92,13 +91,13 @@ class Program
 
 ## Usage
 
-The ISBNValidator API documentation is found here: [https://docs.apiverve.com/ref/isbnvalidator](https://docs.apiverve.com/ref/isbnvalidator?utm_source=nuget&utm_medium=readme).
+The ISBN Validator API documentation is found here: [https://docs.apiverve.com/ref/isbnvalidator](https://docs.apiverve.com/ref/isbnvalidator?utm_source=nuget&utm_medium=referral&utm_content=readme).
 You can find parameters, example responses, and status codes documented here.
 
 ### Setup
 
 ###### Authentication
-ISBNValidator API uses API Key-based authentication. When you create an instance of the API client, you can pass your API Key as a parameter.
+ISBN Validator API uses API Key-based authentication. When you create an instance of the API client, you can pass your API Key as a parameter.
 
 ```csharp
 // Create an instance of the API client
@@ -125,8 +124,8 @@ public class Example
         var apiClient = new ISBNValidatorAPIClient("[YOUR_API_KEY]");
 
         var queryOptions = new ISBNValidatorQueryOptions {
-    Isbn = "978-0-306-40615-7"
-};
+            Isbn = "978-0-306-40615-7"
+        };
 
         var response = await apiClient.ExecuteAsync(queryOptions);
 
@@ -157,8 +156,8 @@ public class Example
         var apiClient = new ISBNValidatorAPIClient("[YOUR_API_KEY]");
 
         var queryOptions = new ISBNValidatorQueryOptions {
-    Isbn = "978-0-306-40615-7"
-};
+            Isbn = "978-0-306-40615-7"
+        };
 
         var response = apiClient.Execute(queryOptions);
 
@@ -194,8 +193,8 @@ public class Example
         var apiClient = new ISBNValidatorAPIClient("[YOUR_API_KEY]");
 
         var queryOptions = new ISBNValidatorQueryOptions {
-    Isbn = "978-0-306-40615-7"
-};
+            Isbn = "978-0-306-40615-7"
+        };
 
         try
         {
@@ -250,8 +249,8 @@ public class Example
         apiClient.SetRetryDelay(2000);     // Wait 2 seconds between retries
 
         var queryOptions = new ISBNValidatorQueryOptions {
-    Isbn = "978-0-306-40615-7"
-};
+            Isbn = "978-0-306-40615-7"
+        };
 
         try
         {
@@ -387,7 +386,7 @@ using (var apiClient = new ISBNValidatorAPIClient("[YOUR_API_KEY]"))
 
 ## Customer Support
 
-Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=nuget&utm_medium=readme).
+Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=nuget&utm_medium=referral&utm_content=readme).
 
 ---
 
@@ -398,12 +397,12 @@ Stay up to date by following [@apiverveHQ](https://twitter.com/apiverveHQ) on Tw
 
 ## Legal
 
-All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=nuget&utm_medium=readme) and all legal documents and agreements.
+All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=nuget&utm_medium=referral&utm_content=readme) and all legal documents and agreements.
 
 ---
 
 ## License
-Licensed under the The MIT License (MIT)
+Licensed under the MIT License (MIT)
 
 Copyright (&copy;) 2026 APIVerve, and EvlarSoft LLC
 
