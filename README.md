@@ -1,13 +1,13 @@
-# [ISBN Validator API](https://apiverve.com/marketplace/isbnvalidator?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+# [ISBN Validator API](https://apiverve.com/marketplace/isbnvalidator?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 
-ISBN Validator is a comprehensive tool for validating and parsing ISBN-10 and ISBN-13 book identification numbers. It validates checksums and provides detailed information about each ISBN component.
+ISBN Validator checks ISBN-10 and ISBN-13 numbers for valid checksums and parses their registration group, publisher, and title parts. Pass any raw book identifier with or without hyphens to inspect normalized digits, format type, and specific rejection reasons.
 
 The ISBN Validator API provides a simple, reliable way to integrate isbn validator functionality into your applications. Built for developers who need production-ready isbn validator capabilities without the complexity of building from scratch.
 
-**[View API Details →](https://apiverve.com/marketplace/isbnvalidator?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)**
+**[View API Details →](https://apiverve.com/marketplace/isbnvalidator?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/isbnvalidator?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/isbnvalidator?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 [![Method](https://img.shields.io/badge/Method-GET-blue.svg)](#)
 [![Platform](https://img.shields.io/badge/Platform-Multi--Platform-orange.svg)](#installation)
 
@@ -161,7 +161,7 @@ go get github.com/apiverve/isbnvalidator-api/go
 
 ## Documentation
 
-- 🏠 **API Home:** [ISBN Validator API](https://apiverve.com/marketplace/isbnvalidator?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home:** [ISBN Validator API](https://apiverve.com/marketplace/isbnvalidator?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 📚 **API Reference:** [docs.apiverve.com/ref/isbnvalidator](https://docs.apiverve.com/ref/isbnvalidator)
 - 📖 **OpenAPI Spec:** [openapi.yaml](./openapi.yaml)
 - 💡 **Examples:** [examples/](./examples/)
@@ -231,7 +231,7 @@ A real response from the ISBN Validator API:
 
 ## Support & Community
 
-- 🏠 **API Home**: [ISBN Validator API](https://apiverve.com/marketplace/isbnvalidator?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home**: [ISBN Validator API](https://apiverve.com/marketplace/isbnvalidator?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 💬 **Support**: [https://apiverve.com/contact](https://apiverve.com/contact)
 - 🐛 **Issues**: [GitHub Issues](../../issues)
 - 📖 **Documentation**: [https://docs.apiverve.com](https://docs.apiverve.com)

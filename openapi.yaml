@@ -2,9 +2,10 @@ openapi: 3.0.4
 info:
   title: ISBN Validator
   description: >-
-    ISBN Validator is a comprehensive tool for validating and parsing ISBN-10
-    and ISBN-13 book identification numbers. It validates checksums and provides
-    detailed information about each ISBN component.
+    ISBN Validator checks ISBN-10 and ISBN-13 numbers for valid checksums and
+    parses their registration group, publisher, and title parts. Pass any raw
+    book identifier with or without hyphens to inspect normalized digits, format
+    type, and specific rejection reasons.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
@@ -19,7 +20,7 @@ servers:
 paths:
   /v1/isbnvalidator:
     get:
-      summary: Validate ISBN
+      summary: ISBN Validator
       description: Validate and parse ISBN-10 or ISBN-13 numbers
       operationId: isbnvalidator
       parameters:
