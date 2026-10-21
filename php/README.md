@@ -1,6 +1,6 @@
 # ISBN Validator API - PHP Package
 
-ISBN Validator is a comprehensive tool for validating and parsing ISBN-10 and ISBN-13 book identification numbers. It validates checksums and provides detailed information about each ISBN component.
+ISBN Validator checks ISBN-10 and ISBN-13 numbers for valid checksums and parses their registration group, publisher, and title parts. Pass any raw book identifier with or without hyphens to inspect normalized digits, format type, and specific rejection reasons.
 
 ## Installation
 
@@ -92,11 +92,11 @@ $client = new Client(
 
 ## Documentation
 
-For more information, visit the [API Documentation](https://docs.apiverve.com/ref/isbnvalidator?utm_source=packagist&utm_medium=readme).
+For more information, visit the [API Documentation](https://docs.apiverve.com/ref/isbnvalidator?utm_source=packagist&utm_medium=referral&utm_content=readme).
 
 ## Support
 
-- Website: [https://apiverve.com/marketplace/isbnvalidator?utm_source=php&utm_medium=readme](https://apiverve.com/marketplace/isbnvalidator?utm_source=php&utm_medium=readme)
+- Website: [https://apiverve.com/marketplace/isbnvalidator?utm_source=php&utm_medium=referral&utm_content=readme](https://apiverve.com/marketplace/isbnvalidator?utm_source=php&utm_medium=referral&utm_content=readme)
 - Email: hello@apiverve.com
 
 ## License
