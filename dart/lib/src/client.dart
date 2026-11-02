@@ -46,7 +46,7 @@ final _formatPatterns = {
 
 /// ISBN Validator API client.
 ///
-/// For more information, visit: https://apiverve.com/marketplace/isbnvalidator?utm_source=dart&utm_medium=readme
+/// For more information, visit: https://apiverve.com/marketplace/isbnvalidator?utm_source=dart&utm_medium=referral&utm_content=readme
 ///
 /// Parameters:
 /// * [isbn] (required) - The ISBN number to validate (ISBN-10 or ISBN-13, with or without separators)

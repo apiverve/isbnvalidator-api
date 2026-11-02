@@ -1,11 +1,11 @@
 # ISBN Validator API - Dart/Flutter Client
 
-ISBN Validator is a comprehensive tool for validating and parsing ISBN-10 and ISBN-13 book identification numbers. It validates checksums and provides detailed information about each ISBN component.
+ISBN Validator checks ISBN-10 and ISBN-13 numbers for valid checksums and parses their registration group, publisher, and title parts. Pass any raw book identifier with or without hyphens to inspect normalized digits, format type, and specific rejection reasons.
 
 [![pub package](https://img.shields.io/pub/v/apiverve_isbnvalidator.svg)](https://pub.dev/packages/apiverve_isbnvalidator)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This is the Dart/Flutter client for the [ISBN Validator API](https://apiverve.com/marketplace/isbnvalidator?utm_source=dart&utm_medium=readme).
+This is the Dart/Flutter client for the [ISBN Validator API](https://apiverve.com/marketplace/isbnvalidator?utm_source=dart&utm_medium=referral&utm_content=readme).
 
 ## Installation
 
@@ -13,7 +13,7 @@ Add this to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  apiverve_isbnvalidator: ^1.1.14
+  apiverve_isbnvalidator: ^1.2.4
 ```
 
 Then run:
@@ -70,12 +70,12 @@ void main() async {
 
 ## API Reference
 
-- **API Home:** [ISBN Validator API](https://apiverve.com/marketplace/isbnvalidator?utm_source=dart&utm_medium=readme)
-- **Documentation:** [docs.apiverve.com/ref/isbnvalidator](https://docs.apiverve.com/ref/isbnvalidator?utm_source=dart&utm_medium=readme)
+- **API Home:** [ISBN Validator API](https://apiverve.com/marketplace/isbnvalidator?utm_source=dart&utm_medium=referral&utm_content=readme)
+- **Documentation:** [docs.apiverve.com/ref/isbnvalidator](https://docs.apiverve.com/ref/isbnvalidator?utm_source=dart&utm_medium=referral&utm_content=readme)
 
 ## Authentication
 
-All requests require an API key. Get yours at [apiverve.com](https://apiverve.com?utm_source=dart&utm_medium=readme).
+All requests require an API key. Get yours at [apiverve.com](https://apiverve.com?utm_source=dart&utm_medium=referral&utm_content=readme).
 
 ## License
 
@@ -83,4 +83,4 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 ---
 
-Built with Dart for [APIVerve](https://apiverve.com?utm_source=dart&utm_medium=readme)
+Built with Dart for [APIVerve](https://apiverve.com?utm_source=dart&utm_medium=referral&utm_content=readme)
