@@ -67,6 +67,12 @@ namespace APIVerve.API.ISBNValidator
 
         [JsonProperty("error")]
         public object Error { get; set; }
+
+        [JsonProperty("isbn10")]
+        public string Isbn10 { get; set; }
+
+        [JsonProperty("isbn13")]
+        public string Isbn13 { get; set; }
     }
 
     public partial class Premium

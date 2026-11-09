@@ -4,7 +4,7 @@
     <TargetFrameworks>net20;net35;net40;net45;netstandard2.0;netstandard2.1;net6.0;net8.0</TargetFrameworks>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Title>ISBN Validator API</Title>
-    <Version>1.2.4</Version>
+    <Version>1.2.5</Version>
     <Authors>APIVerve</Authors>
     <Company>APIVerve</Company>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
@@ -14,7 +14,7 @@
     <PackageReadmeFile>Readme.md</PackageReadmeFile>
     <PackageProjectUrl>https://apiverve.com/marketplace/isbnvalidator?utm_source=nuget&amp;utm_medium=referral&amp;utm_content=homepage</PackageProjectUrl>
     <SignAssembly>False</SignAssembly>
-    <Description>ISBN Validator checks ISBN-10 and ISBN-13 numbers for valid checksums and parses their registration group, publisher, and title parts. Pass any raw book identifier with or without hyphens to inspect normalized digits, format type, and specific rejection reasons.</Description>
+    <Description>ISBN Validator checks ISBN-10 and ISBN-13 numbers for valid checksums, parses their registration group, publisher, and title parts, and converts a valid number to its ISBN-10 and ISBN-13 forms. Pass any raw book identifier with or without hyphens to inspect normalized digits, format type, and specific rejection reasons.</Description>
     <RepositoryUrl>https://github.com/apiverve/isbnvalidator-api</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>isbn;isbn-validator;isbn-10;isbn-13;book-isbn;api;rest;http;client;apiverve;wrapper;sdk</PackageTags>
@@ -37,7 +37,7 @@
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
 
     <!-- Package Release Notes -->
-    <PackageReleaseNotes>ISBN Validator API client for .NET, version 1.2.4. Features include async/await support, automatic retries, custom headers, request logging, and cancellation token support.</PackageReleaseNotes>
+    <PackageReleaseNotes>ISBN Validator API client for .NET, version 1.2.5. Features include async/await support, automatic retries, custom headers, request logging, and cancellation token support.</PackageReleaseNotes>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netstandard2.0|AnyCPU'">

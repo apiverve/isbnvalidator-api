@@ -1,7 +1,7 @@
 ISBN Validator API
 ============
 
-ISBN Validator checks ISBN-10 and ISBN-13 numbers for valid checksums and parses their registration group, publisher, and title parts. Pass any raw book identifier with or without hyphens to inspect normalized digits, format type, and specific rejection reasons.
+ISBN Validator checks ISBN-10 and ISBN-13 numbers for valid checksums, parses their registration group, publisher, and title parts, and converts a valid number to its ISBN-10 and ISBN-13 forms. Pass any raw book identifier with or without hyphens to inspect normalized digits, format type, and specific rejection reasons.
 
 
 [![NuGet version](https://img.shields.io/nuget/v/APIVerve.API.ISBNValidator.svg)](https://www.nuget.org/packages/APIVerve.API.ISBNValidator)
@@ -377,7 +377,9 @@ using (var apiClient = new ISBNValidatorAPIClient("[YOUR_API_KEY]"))
     "publisher": "306",
     "title": "40615",
     "check_digit": "7",
-    "error": null
+    "error": null,
+    "isbn10": "0306406152",
+    "isbn13": "9780306406157"
   }
 }
 ```
