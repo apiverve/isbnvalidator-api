@@ -1,6 +1,6 @@
 # ISBN Validator API - Dart/Flutter Client
 
-ISBN Validator checks ISBN-10 and ISBN-13 numbers for valid checksums and parses their registration group, publisher, and title parts. Pass any raw book identifier with or without hyphens to inspect normalized digits, format type, and specific rejection reasons.
+ISBN Validator checks ISBN-10 and ISBN-13 numbers for valid checksums, parses their registration group, publisher, and title parts, and converts a valid number to its ISBN-10 and ISBN-13 forms. Pass any raw book identifier with or without hyphens to inspect normalized digits, format type, and specific rejection reasons.
 
 [![pub package](https://img.shields.io/pub/v/apiverve_isbnvalidator.svg)](https://pub.dev/packages/apiverve_isbnvalidator)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -13,7 +13,7 @@ Add this to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  apiverve_isbnvalidator: ^1.2.4
+  apiverve_isbnvalidator: ^1.2.5
 ```
 
 Then run:
@@ -63,7 +63,9 @@ void main() async {
     "publisher": "306",
     "title": "40615",
     "check_digit": "7",
-    "error": null
+    "error": null,
+    "isbn10": "0306406152",
+    "isbn13": "9780306406157"
   }
 }
 ```

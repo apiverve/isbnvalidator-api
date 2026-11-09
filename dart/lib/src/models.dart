@@ -68,6 +68,8 @@ class IsbnvalidatorData {
   String? title;
   String? checkDigit;
   dynamic error;
+  String? isbn10;
+  String? isbn13;
 
   IsbnvalidatorData({
     this.valid,
@@ -82,6 +84,8 @@ class IsbnvalidatorData {
     this.title,
     this.checkDigit,
     this.error,
+    this.isbn10,
+    this.isbn13,
   });
 
   factory IsbnvalidatorData.fromJson(Map<String, dynamic> json) => IsbnvalidatorData(
@@ -97,6 +101,8 @@ class IsbnvalidatorData {
       title: json['title'],
       checkDigit: json['check_digit'],
       error: json['error'],
+      isbn10: json['isbn10'],
+      isbn13: json['isbn13'],
     );
 }
 
