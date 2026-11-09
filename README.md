@@ -1,6 +1,6 @@
 # [ISBN Validator API](https://apiverve.com/marketplace/isbnvalidator?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 
-ISBN Validator checks ISBN-10 and ISBN-13 numbers for valid checksums and parses their registration group, publisher, and title parts. Pass any raw book identifier with or without hyphens to inspect normalized digits, format type, and specific rejection reasons.
+ISBN Validator checks ISBN-10 and ISBN-13 numbers for valid checksums, parses their registration group, publisher, and title parts, and converts a valid number to its ISBN-10 and ISBN-13 forms. Pass any raw book identifier with or without hyphens to inspect normalized digits, format type, and specific rejection reasons.
 
 The ISBN Validator API provides a simple, reliable way to integrate isbn validator functionality into your applications. Built for developers who need production-ready isbn validator capabilities without the complexity of building from scratch.
 
@@ -222,7 +222,9 @@ A real response from the ISBN Validator API:
     "publisher": "306",
     "title": "40615",
     "check_digit": "7",
-    "error": null
+    "error": null,
+    "isbn10": "0306406152",
+    "isbn13": "9780306406157"
   }
 }
 ```

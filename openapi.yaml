@@ -2,10 +2,11 @@ openapi: 3.0.4
 info:
   title: ISBN Validator
   description: >-
-    ISBN Validator checks ISBN-10 and ISBN-13 numbers for valid checksums and
-    parses their registration group, publisher, and title parts. Pass any raw
-    book identifier with or without hyphens to inspect normalized digits, format
-    type, and specific rejection reasons.
+    ISBN Validator checks ISBN-10 and ISBN-13 numbers for valid checksums,
+    parses their registration group, publisher, and title parts, and converts a
+    valid number to its ISBN-10 and ISBN-13 forms. Pass any raw book identifier
+    with or without hyphens to inspect normalized digits, format type, and
+    specific rejection reasons.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
@@ -21,7 +22,9 @@ paths:
   /v1/isbnvalidator:
     get:
       summary: ISBN Validator
-      description: Validate and parse ISBN-10 or ISBN-13 numbers
+      description: >-
+        Validate and parse ISBN-10 or ISBN-13 numbers, and convert a valid one
+        between the two formats
       operationId: isbnvalidator
       parameters:
         - name: isbn
@@ -66,6 +69,8 @@ paths:
                   title: '40615'
                   check_digit: '7'
                   error: null
+                  isbn10: '0306406152'
+                  isbn13: '9780306406157'
         '401':
           description: Your request was not authorized, or your API Key was invalid
         '404':
