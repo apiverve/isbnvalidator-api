@@ -1,6 +1,6 @@
 # ISBN Validator API - Ruby Gem
 
-ISBN Validator checks ISBN-10 and ISBN-13 numbers for valid checksums and parses their registration group, publisher, and title parts. Pass any raw book identifier with or without hyphens to inspect normalized digits, format type, and specific rejection reasons.
+ISBN Validator checks ISBN-10 and ISBN-13 numbers for valid checksums, parses their registration group, publisher, and title parts, and converts a valid number to its ISBN-10 and ISBN-13 forms. Pass any raw book identifier with or without hyphens to inspect normalized digits, format type, and specific rejection reasons.
 
 ## Installation
 
@@ -84,7 +84,9 @@ client = APIVerve::Isbnvalidator::Client.new(
     "publisher": "306",
     "title": "40615",
     "check_digit": "7",
-    "error": null
+    "error": null,
+    "isbn10": "0306406152",
+    "isbn13": "9780306406157"
   }
 }
 ```

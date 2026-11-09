@@ -2,12 +2,12 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "apiverve_isbnvalidator"
-  spec.version       = "1.2.4"
+  spec.version       = "1.2.5"
   spec.authors       = ["APIVerve"]
   spec.email         = ["hello@apiverve.com"]
 
   spec.summary       = "ISBN Validator API - Ruby Client"
-  spec.description   = "ISBN Validator checks ISBN-10 and ISBN-13 numbers for valid checksums and parses their registration group, publisher, and title parts. Pass any raw book identifier with or without hyphens to inspect normalized digits, format type, and specific rejection reasons."
+  spec.description   = "ISBN Validator checks ISBN-10 and ISBN-13 numbers for valid checksums, parses their registration group, publisher, and title parts, and converts a valid number to its ISBN-10 and ISBN-13 forms. Pass any raw book identifier with or without hyphens to inspect normalized digits, format type, and specific rejection reasons."
   spec.homepage      = "https://apiverve.com/marketplace/isbnvalidator?utm_source=ruby&utm_medium=referral&utm_content=homepage"
   spec.license       = "MIT"
   spec.required_ruby_version = ">= 2.7.0"
