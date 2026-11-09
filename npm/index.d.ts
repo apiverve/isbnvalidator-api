@@ -37,6 +37,8 @@ declare module '@apiverve/isbnvalidator' {
       title:         null | string;
       checkDigit:    null | string;
       error:         null;
+      isbn10:        null | string;
+      isbn13:        null | string;
   }
 
   export default class isbnvalidatorWrapper {
